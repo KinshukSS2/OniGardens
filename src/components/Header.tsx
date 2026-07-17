@@ -36,11 +36,12 @@ export default function Header() {
   };
 
   return (
-    <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? 'bg-surface/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
-      }`}
-    >
+    <>
+      <header
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+          scrolled ? 'bg-surface/80 backdrop-blur-md py-4 shadow-sm' : 'bg-transparent py-6'
+        }`}
+      >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="#" className={`text-2xl font-bold font-serif ${scrolled ? 'text-heading' : 'text-white'}`}>
           Oni Gardens
@@ -95,6 +96,8 @@ export default function Header() {
         </div>
       </div>
 
+    </header>
+
       {/* Mobile Nav */}
       <AnimatePresence>
         {mobileMenuOpen && (
@@ -102,7 +105,7 @@ export default function Header() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 bg-white z-40 flex flex-col justify-center items-center space-y-8"
+            className="fixed inset-0 bg-surface z-40 flex flex-col justify-center items-center space-y-8 h-screen w-screen"
           >
             {navLinks.map((link) => (
               <a
@@ -124,6 +127,6 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
