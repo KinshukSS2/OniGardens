@@ -2,7 +2,7 @@ import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-forest text-white/80 py-12 md:py-20">
+    <footer className="bg-black text-white/80 py-12 md:py-20">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="flex flex-col space-y-4">
           <h3 className="text-3xl font-serif text-white">Oni Gardens</h3>
