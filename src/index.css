@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-subtitle: "Cormorant Garamond", serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-forest: var(--color-forest);
+  --color-moss: var(--color-moss);
+  --color-earth: var(--color-earth);
+  --color-gold: var(--color-gold);
+  --color-heading: var(--color-heading);
+  --color-dark-text: var(--color-text-primary);
+  --color-secondary-text: var(--color-text-secondary);
+  --color-inverse-text: var(--color-text-inverse);
+  --color-white-fixed: #FFFFFF;
+}
+
+:root {
+  --color-background: #F4F1EB;
+  --color-surface: #FFFFFF;
+  --color-forest: #0C2818;
+  --color-moss: #163622;
+  --color-earth: #704F34;
+  --color-gold: #C29A5B;
+  --color-heading: var(--color-forest);
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #5C5C5C;
+  --color-text-inverse: #FFFFFF;
+}
+
+.dark {
+  --color-background: #080A09;
+  --color-surface: #111412;
+  --color-forest: #0A1C11;
+  --color-moss: #122B19;
+  --color-earth: #8A6546;
+  --color-gold: #D4B272;
+  --color-heading: #F0EDE6;
+  --color-text-primary: #E5E5E5;
+  --color-text-secondary: #999999;
+  --color-text-inverse: #FFFFFF;
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.subtitle {
+  font-family: var(--font-subtitle);
+}
+
+.btn-font {
+  font-family: "Manrope", sans-serif;
+}
