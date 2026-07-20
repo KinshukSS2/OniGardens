@@ -44,7 +44,7 @@ export default function Header() {
       >
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         <a href="#" className={`text-2xl font-bold font-serif ${scrolled ? 'text-heading' : 'text-white'}`}>
-          Oni Gardens
+          Oni Gardens Plot Owners Welfare Association
         </a>
 
         {/* Desktop Nav */}

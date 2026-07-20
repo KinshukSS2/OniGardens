@@ -3,14 +3,14 @@ import { gsap } from 'gsap';
 import { MapPin, Navigation, Compass } from 'lucide-react';
 
 const nearbyAttractions = [
-  { name: 'Eravikulam National Park', distance: '15 KM', image: 'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Mattupetty Dam', distance: '20 KM', image: 'https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Tea Museum', distance: '22 KM', image: 'https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Anamudi Peak', distance: '18 KM', image: 'https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Top Station', distance: '32 KM', image: 'https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Echo Point', distance: '18 KM', image: 'https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Kundala Lake', distance: '25 KM', image: 'https://images.pexels.com/photos/2569500/pexels-photo-2569500.jpeg?auto=compress&cs=tinysrgb&w=800' },
-  { name: 'Attukal Waterfalls', distance: '10 KM', image: 'https://images.pexels.com/photos/3310706/pexels-photo-3310706.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Vadakkunnathan Temple', distance: '7 KM', image: 'https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Peechi Dam', distance: '15 KM', image: 'https://images.pexels.com/photos/15286/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Thrissur Zoo & Museum', distance: '8 KM', image: 'https://images.pexels.com/photos/167684/pexels-photo-167684.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Shakthan Thampuran Palace', distance: '7 KM', image: 'https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Vilangan Hills', distance: '14 KM', image: 'https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Athirappilly Waterfalls', distance: '60 KM', image: 'https://images.pexels.com/photos/2034335/pexels-photo-2034335.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Snehatheeram Beach', distance: '30 KM', image: 'https://images.pexels.com/photos/2569500/pexels-photo-2569500.jpeg?auto=compress&cs=tinysrgb&w=800' },
+  { name: 'Kerala Kalamandalam', distance: '35 KM', image: 'https://images.pexels.com/photos/3310706/pexels-photo-3310706.jpeg?auto=compress&cs=tinysrgb&w=800' },
 ];
 
 export default function Location() {
@@ -56,7 +56,7 @@ export default function Location() {
             </h3>
             <p className="location-elem text-secondary-text text-lg leading-relaxed font-light mb-10">
               Our estate is strategically located to offer complete seclusion while remaining accessible. 
-              The journey to Oni Gardens is an experience in itself, winding through scenic mountain roads and misty valleys.
+              The journey to Oni Gardens is an experience in itself, winding through scenic routes and lush landscapes.
             </p>
             
             <div className="space-y-6">
@@ -66,7 +66,7 @@ export default function Location() {
                 </div>
                 <div>
                   <h5 className="font-serif text-xl text-heading mb-1">Cochin International Airport</h5>
-                  <p className="text-secondary-text text-sm font-light">110 KM (Approx. 3 hours drive)</p>
+                  <p className="text-secondary-text text-sm font-light">52 KM (Approx. 1.5 hours drive)</p>
                 </div>
               </div>
               
@@ -75,8 +75,8 @@ export default function Location() {
                   <Compass size={24} />
                 </div>
                 <div>
-                  <h5 className="font-serif text-xl text-heading mb-1">Munnar Town Center</h5>
-                  <p className="text-secondary-text text-sm font-light">25 KM (Approx. 45 minutes drive)</p>
+                  <h5 className="font-serif text-xl text-heading mb-1">Thrissur Town Center</h5>
+                  <p className="text-secondary-text text-sm font-light">6 KM (Approx. 15 minutes drive)</p>
                 </div>
               </div>
             </div>

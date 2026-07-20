@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-black text-white/80 py-12 md:py-20">
       <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-3 gap-12">
         <div className="flex flex-col space-y-4">
-          <h3 className="text-3xl font-serif text-white">Oni Gardens</h3>
+          <h3 className="text-3xl font-serif text-white">Oni Gardens Plot Owners Welfare Association</h3>
           <p className="max-w-xs font-light">
             Luxury living surrounded by nature in the hidden hills of Kerala.
           </p>
@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-6 md:px-12 mt-12 pt-8 border-t border-white/20 text-sm text-center md:text-left flex flex-col md:flex-row justify-between">
-        <p>&copy; {new Date().getFullYear()} Oni Gardens. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Oni Gardens Plot Owners Welfare Association. All rights reserved.</p>
         <p className="mt-2 md:mt-0">Designed for luxury.</p>
       </div>
     </footer>

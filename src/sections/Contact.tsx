@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 export default function Contact() {
   const sectionRef = useRef<HTMLElement>(null);
@@ -43,24 +43,20 @@ export default function Contact() {
           <div className="w-full md:w-2/5 bg-moss text-white-fixed p-10 md:p-14 flex flex-col justify-between contact-elem">
             <div>
               <h4 className="text-3xl font-serif mb-6">Contact Us</h4>
-              <p className="text-white/70 font-light mb-12">
-                Reach out to our concierge team to plan your exclusive retreat in the hills.
+              <p className="text-white/70 font-light mb-12 text-sm leading-relaxed">
+                Please contact the Association via email at <a href="mailto:onigarden43@gmail.com" className="text-gold hover:underline">onigarden43@gmail.com</a> before investing in Oni Gardens.
+                <br /><br />
+                We do not have any tie-up with any developers such as RM CO, Indian Yard Realty Solutions, or any other developer.
               </p>
               
               <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <Phone className="text-gold mt-1" size={20} />
-                  <div>
-                    <h5 className="font-medium font-serif text-lg mb-1">Phone</h5>
-                    <p className="text-white/70 font-light text-sm">+91 98765 43210</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
                   <Mail className="text-gold mt-1" size={20} />
                   <div>
                     <h5 className="font-medium font-serif text-lg mb-1">Email</h5>
-                    <p className="text-white/70 font-light text-sm">reservations@onigardens.com</p>
+                    <p className="text-white/70 font-light text-sm">
+                      <a href="mailto:onigarden43@gmail.com" className="hover:text-gold transition-colors">onigarden43@gmail.com</a>
+                    </p>
                   </div>
                 </div>
                 
@@ -69,9 +65,10 @@ export default function Contact() {
                   <div>
                     <h5 className="font-medium font-serif text-lg mb-1">Address</h5>
                     <p className="text-white/70 font-light text-sm leading-relaxed">
-                      Oni Gardens Estate,<br/>
-                      Munnar-Vattavada Road,<br/>
-                      Kerala, India 685612
+                      Oni Gardens,<br/>
+                      Mulayam Road, Mannuthy,<br/>
+                      Thrissur, Kerala - 680651, Kerala State<br/>
+                      (Registration No. TSR/TC/582/2018)
                     </p>
                   </div>
                 </div>
